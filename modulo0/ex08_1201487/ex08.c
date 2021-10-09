@@ -13,7 +13,7 @@ int main(void){
 	
 	char position;
 	
-	for(int i=0;i<strlen(str)-1;i++){
+	for(int i=0;i<=strlen(str)-1;i++){
 	
 		if(str[i]=='.') {
 			position = str[i]-48;

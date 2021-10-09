@@ -25,7 +25,7 @@ int main(void){
 		printf("Hexadecimal base \n");
 		break;
 		case(4):
-		 printf("Decimal base or Hexadecimal\n");
+		 printf("Decimal base or Hexadecimal base\n");
 		 break;
 		default :
 		 printf("ERROR\n");
@@ -49,19 +49,33 @@ char verifyBase(char *str){
 	for(int i=0;i<=strlen(str)-1;i++){
 		
 		digit = str[i] - 48;
-		
+
 		if(digit==1 || digit== 0){
 			countBinary++;
-		} else if(digit<=7){
 			countOctal++;
-		} else if(digit>8 || (str[i]<'71' && str[i]>'65')){
+			countDecimal++;
+			countHexDecimal++;
+		} else if (digit<=7 && digit>0){
+			countOctal++;
+			countDecimal++;
+			countHexDecimal++;
+		} else if (digit>0 ){
+		    countDecimal++; 
 		    countHexDecimal++;
-	} else { countDecimal++; }
-}
+		} else if (digit>0 || (str[i]<'72' && str[i]>'64')) {
+			countHexDecimal++;
+	}
+ }
 
+	printf("COUNTS\n");
+    printf("%d\n",countBinary);
+	printf("%d\n",countOctal);
+	printf("%d\n",countHexDecimal);
+	printf("%d\n",countDecimal);
+ 
 	if(countBinary==strlen(str)){ return 1; }
 	else if(countOctal==strlen(str)) {return 2;}
+	else if(countDecimal == strlen(str)) { return 4;}
 	else if(countHexDecimal==strlen(str)){ return 3;}
-	else { return 4;}
 	
 }

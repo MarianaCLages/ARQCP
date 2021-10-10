@@ -1,8 +1,10 @@
 #include <stdio.h>
 #include <string.h>
 
-char integer_part(char x,char *str);
-char fractional_part(char x,char *str);
+char integer_part(char *str);
+char fractional_part(char *str);
+
+int i = 0;
 
 int main(void){
 
@@ -11,20 +13,8 @@ int main(void){
 	printf("Type a number\n");
 	scanf("%[^\n]s",str);
 	
-	char position;
-	
-	for(int i=0;i<=strlen(str)-1;i++){
-	
-		if(str[i]=='.') {
-			position = str[i]-48;
-		}
-	
-	}
-	
-	printf("%d",position);
-	
-	char in = integer_part(position,str);
-	char frac = fractional_part(position,str);
+	char in = integer_part(str);
+	char frac = fractional_part(str);
 	
 	printf("Fractional part = %d\n",frac);
 	printf("Integer part = %d\n",in);
@@ -33,35 +23,37 @@ int main(void){
 
 }
 
-char integer_part(char x,char *str){
+char integer_part(char *str){
 	
 	char digit,m=0,j=1;
 	
-	for(int i=x;i>=0;i--){
-		
+	while(str[i]!='.')
+		{
 		digit = str[i];
 		digit = digit-48;
+		i++;
 		
 		m = m + (digit * j);
 		j = j*10;
 		
 	}
-	
 	return m;
-	
 }
 
-char fractional_part(char x,char *str){
+
+char fractional_part(char *str){
 	
 	char digit,m=0,j=1;
+	i++;
 	
-	for(int i=strlen(str)-1;i>=x;i--){
+	while(str[i]!=0){
 		
 		digit = str[i];
 		digit = digit-48;
 		
 		m = m + (digit * j);
 		j = j*10;
+		i++;
 		
 	}
 	

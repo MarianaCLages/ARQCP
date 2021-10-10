@@ -55,23 +55,17 @@ char verifyBase(char *str){
 			countOctal++;
 			countDecimal++;
 			countHexDecimal++;
-		} else if (digit<=7 && digit>0){
+		} else if (digit<=7 && digit>=0){
 			countOctal++;
 			countDecimal++;
 			countHexDecimal++;
-		} else if (digit>0 ){
+		} else if (digit>=0 && digit<=9){
 		    countDecimal++; 
 		    countHexDecimal++;
-		} else if (digit>0 || (str[i]<'72' && str[i]>'64')) {
+		} else if (digit>=0 || (str[i]<'72' && str[i]>'64')) {
 			countHexDecimal++;
 	}
  }
-
-	printf("COUNTS\n");
-    printf("%d\n",countBinary);
-	printf("%d\n",countOctal);
-	printf("%d\n",countHexDecimal);
-	printf("%d\n",countDecimal);
  
 	if(countBinary==strlen(str)){ return 1; }
 	else if(countOctal==strlen(str)) {return 2;}

@@ -1,13 +1,11 @@
 #include <stdio.h>
 #include "average.h"
 
-int main(void) {
+int main() {
 	
-	int n = 5;
-	int v[n];
+	int v[] = {7, 9};
 	
-	int average = average_array(fill_array(v, n), n);
-	printf("Average of array = %d\n", average);
+	printf("Average = %d\n", average_array(v, 2));
 	
 	return 0;
 }

@@ -1,11 +1,14 @@
-ex15: main.o duo.o check.o:
-	gcc -g -Wall frequencies.o main.o check.o inc_nsets.o -o ex15
+ex15: main.o trio.o:
+	gcc -g -Wall -c main.o trio.o -o ex15
 	
 main.o: main.c
 	gcc -g -Wall -c main.c -o main.o
 	
-trio.o: populate.c inc_nsets.c check.c
-	gcc -g -Wall -c populate.c inc_nsets.c check.c -o trio.o
+duo.o: populate.c inc_nsets.c 
+	gcc -g -Wall -c populate.c inc_nsets.c -o duo.o
+	
+trio.o: duo.o check.c
+	gcc -g -Wall -c check.c duo.o -o trio.o
 	
 run: ex15
 	./ex15

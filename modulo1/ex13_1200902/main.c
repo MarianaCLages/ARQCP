@@ -11,4 +11,5 @@ int main(void) {
 	int count = where_is(str, c, vec);
 	printf("Character occurances: %d\n", count);
 	
+	return 0;
 }

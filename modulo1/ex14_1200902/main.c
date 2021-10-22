@@ -16,4 +16,5 @@ int main(void) {
 	for(int i = 0; i <= 20; i++) {
 		printf("%d -> %d\n", i, *(ptr2 + i));
 	}
+	return 0;
 }

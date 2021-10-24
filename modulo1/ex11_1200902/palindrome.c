@@ -25,6 +25,8 @@ int palindrome(char *str) {
 	
 	if(*ptr1 == *ptr2) {
 		return 1;
+		ptr1++;
+		ptr2--;
 	} else {
 		return 0;
 	}

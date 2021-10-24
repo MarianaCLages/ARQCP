@@ -11,4 +11,4 @@ run: ex20
 	./ex20
 
 clean: 
-	rm -f .o* ex19
+	rm -f .o* ex20

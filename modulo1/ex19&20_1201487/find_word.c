@@ -1,6 +1,8 @@
 #include <string.h>
 #include <stdio.h>
 
+ int acc = 0 ;
+
 char* find_word(char* word, char* initial_addr){
  
 	char *sPtr1 = word;
@@ -47,8 +49,6 @@ char* find_word(char* word, char* initial_addr){
 
 
  void find_all_words(char*  str,  char*  word,  char**  addrs){
-	 
-	 int acc = 0 ;
 	  
 	 while(*str != str[strlen(str)-1]) {
 	 addrs[acc] = find_word(word,str);

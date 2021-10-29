@@ -7,6 +7,7 @@
 	
 		*(iPtr + i) = *(sPtr + i);
 		*(iPtr + 1 + i) = *(sPtr + 1 + i);
+		
 		*(iPtr + 2 + i) = *(sPtr + 2 + i);
 		*(iPtr + 3 + i) = *(sPtr + 3 + i);
 		

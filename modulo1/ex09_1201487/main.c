@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "sort_without_reps.h"
 
 int main(void){
 	
@@ -6,12 +7,13 @@ int main(void){
 	int vec2[10];
 	
 	int n = 9;
+	int count;
 	
-	sort_without_reps(vec1,n,vec2);
+	count = sort_without_reps(vec1,n,vec2);
 	
-	for(int i = 0 ; i < n ; i++){
+	for(int i = 0 ; i < count ; i++){
 		
-		printf("%d\t",vec2[i]);
+		printf("%d\n",vec2[i]);
 		
 	}
 

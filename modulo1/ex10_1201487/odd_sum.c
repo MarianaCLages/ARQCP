@@ -6,7 +6,7 @@ int odd_sum(int  *p){
 	
 	xPtr++;
 	
-	for(int i = 0 ; i < n-1 ; i ++ ){
+	for(int i = 1 ; i < n ; i ++ ){
 	
 		if ( *xPtr % 2 != 0 ){
 			sum += *xPtr;

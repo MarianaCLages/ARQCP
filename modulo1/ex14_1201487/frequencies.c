@@ -1,21 +1,16 @@
-void frequencies(float *grades, int n, int *freq){
-
-	float *xPtr = grades;
-	int *iPtr = freq;
+void frequencies(float *grades, int n, int *freq) {
 	
-	for(int i = 0 ; i < n ; i++){
+	int count;
+	int grade;
 	
-		for(int j = 0 ; j < n ; j ++){
-			
-			*xPtr = (int)*xPtr;
-	
-			if(*xPtr == j){
-				*iPtr += 1;
+	for(int i = 0; i <= 20; i++) {
+		count = 0;
+		for(int j = 0; j < n; j++) {
+			grade = (int)*(grades + j);
+			if(grade == i) {
+				count++;
 			}
-			iPtr++;
 		}
-		xPtr++;
-		iPtr = freq;
+		*(freq + i) = count;
 	}
-
 }

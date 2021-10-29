@@ -3,7 +3,7 @@
 
 int main(void){
 
-	char vec[] = "Gateman sees name, garageman sees name tag";
+	char vec[] = "Never odd or even ";
 	
 	if(palindrome(vec)==1){
 		printf("Not a palindrome\n");

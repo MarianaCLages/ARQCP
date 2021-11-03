@@ -3,4 +3,6 @@
 int sum(void);
 long sum_v2(void);
 long sum_v3(void);
+extern int op3;
+extern int op4;
 #endif

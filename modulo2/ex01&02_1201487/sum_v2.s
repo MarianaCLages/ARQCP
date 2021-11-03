@@ -4,7 +4,7 @@
 .global op2
 
 constant:
-		.int 10
+		.int 15
 
 .section .text
 

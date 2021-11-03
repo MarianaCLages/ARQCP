@@ -20,6 +20,7 @@ int main(void) {
  printf("sum = %d:0x%x\n", res,res);
  printf("sub = %d:0x%x\n",sub,sub);
  printf("sum_v3 = %d:0x%x\n", sum,sum);
+ //printf("Op3 : %d and Op4: %d\n",op3,op4);
  
  
 return 0;

@@ -1,5 +1,8 @@
+#ifndef STRING_H
+#define STRING_H
 #include <string.h>
 #include <stdio.h>
+#endif
 
 int palindrome(char *str){
 	
@@ -13,15 +16,15 @@ int palindrome(char *str){
 		} else if(*xPtr2 == ' ' || *xPtr2 == ',' || *xPtr2 == '.' || *xPtr2 == '-' || *xPtr2 == '_') {
 			xPtr2--;
 		}
-	
+		
 		if(*xPtr1 >= 'A' && *xPtr1<='Z'){
 			*xPtr1 += 32;
 		} else if (*xPtr2 >= 'A' && *xPtr2<='Z'){
 			*xPtr2 += 32;
 		}
 		
-		printf("1:%c\n",*xPtr1);
-		printf("2:%c\n",*xPtr2);
+		printf("CHAR 1 :%c\n",*xPtr1);
+		printf("CHAR 2 :%c\n",*xPtr2);
 		
 		if(*xPtr1 != *xPtr2) return 1;
 		

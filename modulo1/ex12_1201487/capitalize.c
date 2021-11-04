@@ -1,3 +1,8 @@
+#ifndef STRING_H
+#define STRING_H
+#include <string.h>
+#endif
+
 void capitalize (char *str){
 
 	char *xPtr1 = str;
@@ -13,7 +18,5 @@ void capitalize (char *str){
 		xPtr1++;
 		
 	}
-	return 0;
-
 
 }

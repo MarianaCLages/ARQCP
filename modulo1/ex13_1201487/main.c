@@ -22,7 +22,7 @@ int main(void){
 	
 	}
 	
-	printf("\n The number of occ was : %hhd\t",ttl);
+	printf("\n The number of occ was : %hhd\t\n",ttl);
 	return 0;
 
 }

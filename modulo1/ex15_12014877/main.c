@@ -12,12 +12,14 @@ int main(void){
 	populate(vec,num,limit);
 	
 	for(int i = 0 ; i < num/3 ; i++){
-		if(check(*set,*(set+4),*(set+8))==1){
+		int flag = check(*set,*(set+4),*(set+8));
+		if(flag==1){
 			printf("Yes\n");
 		} else {
 			printf("No\n");
 		}
-		inc_nsets();
+		inc_nsets(); // Ainda nao esta a funcionar
+		set++;
 	}
 	
 	return 0;

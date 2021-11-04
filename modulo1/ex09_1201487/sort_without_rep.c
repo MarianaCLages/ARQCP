@@ -18,9 +18,7 @@ int sort_without_reps(int *src, int n, int *dest){
 					
 			} else if(*(xPtr +j ) == *(xPtr + i)){
 						
-				 *(xPtr + i) = 0;
-				 *(xPtr + j) = 0;
-				 break;
+				 count--;
 						
 				}
 		}
@@ -29,5 +27,5 @@ int sort_without_reps(int *src, int n, int *dest){
 		xPtr2++;
 			
 	}
-	return 1;
+	return count;
 }

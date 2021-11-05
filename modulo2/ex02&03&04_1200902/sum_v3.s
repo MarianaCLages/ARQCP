@@ -3,10 +3,10 @@
 	.global op2
 	
 op3:
-	.int 2
+	.long 2
 	
 op4:
-	.int 2
+	.long 2
 	
 .section .text
 	.global sum_v3

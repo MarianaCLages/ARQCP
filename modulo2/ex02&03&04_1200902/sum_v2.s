@@ -12,8 +12,8 @@ sum_v2:
 		movl op1(%rip), %eax
 		movl op2(%rip), %ecx
 		
-		subl CONST(%rip), %eax
-		subl CONST(%rip), %ecx
+		subl %eax, CONST(%rip)
+		subl %ecx, CONST(%rip)
 		
 		subl %ecx, %eax
 		

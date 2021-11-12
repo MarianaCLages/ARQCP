@@ -11,12 +11,8 @@ int main(void) {
 	scanf("%d", &op2);
 	
 	int res = sum();
-	int res2 = sum_v2();
-	int res3 = sum_v3();
 	
 	printf("sum = %d\n", res);
-	printf("sum_v2 = %d\n", res2);
-	printf("sum_v3 = %d\n", res3);
 	
 	return 0;
 }

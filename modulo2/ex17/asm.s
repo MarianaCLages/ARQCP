@@ -21,7 +21,7 @@ sum:
 		
 ret   
 
-subtaction:
+subtraction:
 
 	movl varA(%rip), %eax
 	subl varB(%rip), %eax	
@@ -37,7 +37,7 @@ multiplication:
 	
 ret
 
-division:
+divison:
 
 	movl varA(%rip), %eax
 	
@@ -78,7 +78,6 @@ powers3:
 	movl varA(%rip), %ecx
 	
 	imull %ecx
-	
 	imull %ecx
 	
 ret	

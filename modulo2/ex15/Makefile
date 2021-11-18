@@ -8,6 +8,6 @@ asm.o: asm.s
 	gcc -g -Wall -c asm.s -o asm.o
 
 run: ex15
-   ./ex15
+	./ex15
 	
 	

@@ -6,9 +6,33 @@ int varB = 20;
 
 int main(void) {
 	
-long res = sum();
+int res = sum();
  
-printf("sum = %ld\n", res);
+printf("sum = %d\n", res);
+
+res = subtraction();
+ 
+printf("sum = %d\n", res);
+
+res = multiplication();
+ 
+printf("sum = %d\n", res);
+
+res = divison();
+ 
+printf("sum = %d\n", res);
+
+res = modulus();
+ 
+printf("sum = %d\n", res);
+
+res = powers2();
+ 
+printf("sum = %d\n", res);
+
+res = powers3();
+ 
+printf("sum = %d\n", res);
 
 return 0;
 

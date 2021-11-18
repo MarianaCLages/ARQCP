@@ -7,9 +7,9 @@
 
 .section .text
 
-.global getAreaAsm 
+.global compute 
 
-getAreaAsm:
+compute:
 
 		movl varA(%rip), %eax
 		

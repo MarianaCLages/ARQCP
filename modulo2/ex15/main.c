@@ -10,7 +10,7 @@ int main(void) {
 	
 int res = compute();
  
-printf("sum = %d\n", res);
+printf("res = %d\n", res);
 
 return 0;
 

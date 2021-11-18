@@ -11,15 +11,15 @@
 
 sum_and_subtract:
 
-		movl varC(%rip), %eax
+		movslq varC(%rip), %rax
+		movsbq varA(%rip), %rcx
+		
+		addq %rcx, %rax
+		
+		movslq varD(%rip), %rcx
+		subq %rcx, %rax
 	
-		addb varA(%rip), %al
-		
-		subl varD(%rip), %eax
-		
-		addw varB(%rip), %ax
-		
-		
-		
+		movswq varB(%rip), %rcx
+		addq %rcx, %rax
 
    ret   

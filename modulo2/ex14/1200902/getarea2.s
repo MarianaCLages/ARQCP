@@ -17,6 +17,14 @@ getArea2:
 	
 	movl $2, %ecx
 	
-	idivl %ecx
+	cmpl $0, %eax
+	je zero_condition
 	
+	idivl %ecx
+	jmp end
+	
+zero_condition:
+	movl $0, %eax
+	
+end:
 	ret

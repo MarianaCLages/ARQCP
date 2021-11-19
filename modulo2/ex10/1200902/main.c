@@ -8,4 +8,6 @@ int main(void) {
 	long long res = sum2ints();
 	
 	printf("Sum2ints: %lld\n", res);
+	
+	return 0;
 }

@@ -18,10 +18,13 @@ d:
 sum_and_subtract:
 
 	movslq c(%rip), %rax
+	
 	movsbq a(%rip), %rcx
 	addq %rcx, %rax
+	
 	movslq d(%rip), %rcx
 	subq %rcx, %rax
+	
 	movswq b(%rip), %rcx
 	addq %rcx, %rax
 	

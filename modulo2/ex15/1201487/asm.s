@@ -1,9 +1,9 @@
 .section data
 
-.global varA
-.global varB
-.global varC
-.global varD
+.global a
+.global b
+.global c
+.global d
 
 .section .text
 
@@ -11,15 +11,15 @@
 
 compute:
 
-		movl varA(%rip), %eax
+		movl a(%rip), %eax
 		
-		movl varB(%rip), %ecx
+		movl b(%rip), %ecx
 		
 		imull %ecx
 		
-		addq varC(%rip), %rax
+		addq c(%rip), %rax
 		
-		movl varD(%rip), %ecx
+		movl d(%rip), %ecx
 		
 		idiv %ecx
 		

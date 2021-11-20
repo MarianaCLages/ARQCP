@@ -7,5 +7,8 @@ main.o: main.c
 sum2ints.o: sum2ints.s
 	gcc -g -Wall -c sum2ints.s -o sum2ints.o
 	
+clean:
+	rm -f *.o ex10
+	
 run: ex10
 	./ex10

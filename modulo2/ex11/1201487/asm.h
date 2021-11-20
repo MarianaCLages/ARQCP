@@ -1,4 +1,4 @@
-#ifndef TEST_FLAGS_H
-#define TEST_FLAGS_H
+#ifndef ASM_H
+#define ASM_H
 char test_flags(void);
 #endif

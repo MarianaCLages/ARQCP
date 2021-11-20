@@ -6,6 +6,9 @@ main.o: main.c
 	
 asm.o: asm.s
 	gcc -g -Wall -c asm.s -o asm.o
+	
+clean:
+	rm -f *.o ex11
 
 run: ex11
 	./ex11

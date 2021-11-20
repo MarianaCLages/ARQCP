@@ -1,4 +1,4 @@
-.section data
+.section .data
 
 .global varA
 .global varB
@@ -8,7 +8,6 @@
 .global test_flags 
 
 test_flags:
-
 		movl varA(%rip), %eax
 	
 		addl varB(%rip), %eax

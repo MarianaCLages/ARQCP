@@ -12,8 +12,8 @@ swapBytes:
 		
 		movw s(%rip), %ax
 		
-		movb %ah, %cl
-		movb %al, %ah
+		movb %al, %cl
+		movb %ah, %al
 		movb %cl, %ah
 
 ret   

@@ -3,7 +3,7 @@
 
 int main(void) {
 	
-int res = getAreaAsm();
+int res = getArea();
  
 printf("sum = %d\n", res);
 

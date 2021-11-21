@@ -1,6 +1,5 @@
 .section data
 
-
 .equ A_CONSTANT, 1
 .equ B_CONSTANT, 2
 
@@ -11,7 +10,6 @@
 .global mulloop 
 
 mulloop:
-	
 		movl i(%rip), %ecx
 		movq $0, %r9
 		movl $0, %eax
@@ -33,11 +31,14 @@ end_my_loop:
 		movl %ecx, %eax
 		
 		imull %ecx
-		
+			
 		imull %r9d
 
 		movl $B_CONSTANT, %ecx
 		
 		idivl %ecx
+		
+		salq $32,%rdx
+		orq %rdx,%rax
 				
-		ret   
+ret   

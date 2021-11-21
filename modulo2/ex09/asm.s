@@ -1,24 +1,24 @@
 .section .data
 
-.global varA
-.global varB
-.global varC
-.global varD
+.global A
+.global B
+.global C
+.global D
 
 .section .text
 
 .global sum_and_subtract 
 
 sum_and_subtract:
-		movslq varC(%rip), %rax
-		movsbq varA(%rip), %rcx
+		movslq C(%rip), %rax
+		movsbq A(%rip), %rcx
 		
 		addq %rcx, %rax
 		
-		movslq varD(%rip), %rcx
+		movslq D(%rip), %rcx
 		subq %rcx, %rax
 	
-		movswq varB(%rip), %rcx
+		movswq B(%rip), %rcx
 		addq %rcx, %rax
 
    ret   

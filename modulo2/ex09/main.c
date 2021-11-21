@@ -1,10 +1,10 @@
 #include <stdio.h>
 #include "asm.h"
 
-char varA = 1;
-short varB = 100;
-int varC = 3000;
-int varD = 3000;
+char A = 1;
+short B = 100;
+int C = 3000;
+int D = 3000;
 
 int main(void) {
 	

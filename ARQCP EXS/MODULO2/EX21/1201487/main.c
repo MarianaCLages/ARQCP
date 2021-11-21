@@ -1,16 +1,17 @@
 #include <stdio.h>
 #include "asm.h"
 
-long num = -1;
+int code = 13;
+int currentSalary = 100;
 
 int main(void) {
 	
-int res = steps();
+int res = new_salary();
  
 printf("sum = %d\n", res);
 
 return 0;
 
-}
+} 
 
 	

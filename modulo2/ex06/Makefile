@@ -1,14 +1,11 @@
-ex06: main.o asm.o
-	gcc -g -Wall main.o asm.o -o ex06
+ex05: main.o concat.o
+	gcc -g -Wall main.o concat.o -o ex05
 	
 main.o: main.c
 	gcc -g -Wall -c main.c -o main.o
 	
-asm.o: asm.s
-	gcc -g -Wall -c asm.s -o asm.o
+concat.o: concat.s
+	gcc -g -Wall -c concat.s -o concat.o
 	
-clean:
-	rm -f *.o ex06
-
-run: ex06
-	./ex06
+run: ex05
+	./ex05

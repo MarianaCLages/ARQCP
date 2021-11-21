@@ -1,13 +1,13 @@
 #include <stdio.h>
 #include "asm.h"
 
-short s=0xAABB;
+int num = 10;
 
 int main(void) {
 	
-short res = swapBytes();
+int res = check_num();
  
-printf("sum1 = 0x%X\n", res);
+printf("res = %d\n", res);
 
 return 0;
 

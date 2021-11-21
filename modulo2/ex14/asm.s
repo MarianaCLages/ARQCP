@@ -8,9 +8,9 @@ height:
 
 .section .text
 
-.global getAreaAsm 
+.global getArea 
 
-getAreaAsm:
+getArea:
 		movl base(%rip), %eax
 		movl height(%rip), %ecx
 		

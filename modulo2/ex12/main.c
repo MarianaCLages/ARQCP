@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include "asm.h"
 
-int varA = 36;
-int varB = 6;
+int A = 36;
+int B = 6;
 
 int main(void) {
 	

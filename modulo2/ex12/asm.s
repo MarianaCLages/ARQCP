@@ -1,18 +1,21 @@
 .section .data
 
-.global varA
-.global varB
+.global A
+.global B
 
 .section .text
 
 .global isMultiple 
 
 isMultiple:
-		movl varA(%rip), %eax
+		movl A(%rip), %eax
 		
 		cltd
 
-		movl varB(%rip), %ecx
+		movl B(%rip), %ecx
+		
+		cmpl $0, %ecx
+		je end
 		
 		idiv %ecx
 		

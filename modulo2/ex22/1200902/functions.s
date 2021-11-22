@@ -83,6 +83,8 @@ f3_greatequal:
 
 	idivl %r8d
 	
+	jmp end
+	
 f4:
 	movl i(%rip), %eax
 	movl j(%rip), %ecx

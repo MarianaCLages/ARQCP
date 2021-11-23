@@ -1,17 +1,17 @@
-exAnoPassado: main.o header1.o header2.o
-	gcc -g -Wall main.o asm.o header2.o -o exAnoPassado
+exAnoPassado: main.o total_risco.o result.o
+	gcc -g -Wall main.o total_risco.o result.o -o exAnoPassado
 	
 main.o: main.c
 	gcc -g -Wall -c main.c -o main.o
 	
-header1.o: header1.c
-	gcc -g -Wall -c header1.c -o header1.o
+total_risco.o: total_risco.c
+	gcc -g -Wall -c total_risco.c -o total_risco.o
 	
-header2.o: header2.s
-	gcc -g -Wall -c header2.s -o header2.o
+result.o: result.s
+	gcc -g -Wall -c result.s -o result.o
 	
 clean:
-	rm -f *.o ex12
+	rm -f *.o exAnoPassado
 
 run: exAnoPassado
 	./exAnoPassado

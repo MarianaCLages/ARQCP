@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "header1.h"
+#include "total_risco.h"
 
 int main(void) {
 	int num = 6;

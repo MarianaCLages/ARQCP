@@ -1,4 +1,4 @@
 #ifndef HEADER1_H
 #define HEADER1_H
-int coiso(int *vec, int n);
+long long total_risco(int *vec, int num); 
 #endif

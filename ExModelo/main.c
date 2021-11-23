@@ -13,7 +13,7 @@ int main(void) {
 	for(int i = 1; i < n * 2; i += 2) {
 		unsigned short numero = *(ptr + i);
 		unsigned char resto = *(ptr + i - 1);
-		printf("Valor do número : %hu\n",numero);
+		printf("Valor do número : 0x%X\n",numero);
 		printf("Valor do resto : %hhu\n", resto);
 		
 	}

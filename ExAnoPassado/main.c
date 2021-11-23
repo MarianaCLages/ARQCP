@@ -9,7 +9,7 @@ int main(void) {
 	
 	long long result = total_risco(ptr, num);
 	
-	printf("Resultado dos riscos: ", result);
+	printf("Resultado dos riscos: %llu\n", result);
 	
 	return 0;
 }

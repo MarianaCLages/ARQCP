@@ -6,14 +6,14 @@
 .global result
 
 result:
-	movl tempo(%rip), %r9d
+	cmpl $0, tempo(%rip)
+	jl end_result
+	
+	cmpl $0, proximidade(%rip)
+	jl end_result
+	
+	movl tempo(%rip), %eax
 	movl proximidade(%rip), %ecx
-	
-	cmpl $0, %r9d
-	jl end_result
-	
-	cmpl $0, %ecx
-	jl end_result
 	
 	imull %ecx
 	

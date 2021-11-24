@@ -7,9 +7,9 @@ int main(void) {
 	
 	int *ptr = dados;
 	
-	long long result = total_risco(ptr, num);
+	long result = total_risco(ptr, num);
 	
-	printf("Resultado dos riscos: %llu\n", result);
+	printf("Resultado dos riscos: %ld\n", result);
 	
 	return 0;
 }

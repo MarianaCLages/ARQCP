@@ -1,4 +1,4 @@
 #ifndef RESULT_H
 #define RESULT_H
-long long result(void);
+long result(void);
 #endif

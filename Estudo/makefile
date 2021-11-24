@@ -1,17 +1,17 @@
-estudo: main.o header1.o header2.o
-	gcc -g -Wall main.o header1.o header2.o -o estudo
+ex: main.o nota.o min_max_notas.o
+	gcc -g -Wall main.o nota.o min_max_notas.o -o ex
 	
 main.o: main.c
 	gcc -g -Wall -c main.c -o main.o
 	
-header1.o: header1.c
-	gcc -g -Wall -c header1.c -o header1.o
+nota.o: nota.c
+	gcc -g -Wall -c nota.c -o nota.o
 	
-header2.o: header2.s
-	gcc -g -Wall -c header2.s -o header2.o
+min_max_notas.o: min_max_notas.s
+	gcc -g -Wall -c min_max_notas.s -o min_max_notas.o
 	
 clean:
-	rm -f *.o estudo
+	rm -f *.o ex
 
-run: estudo
-	./estudo
+run: ex
+	./ex

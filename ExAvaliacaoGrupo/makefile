@@ -1,5 +1,5 @@
-exAvaliacao: main.o vencedor.o header2.o
-	gcc -g -Wall main.o vencedor.o min_max_notas.o -o exAvaliacao
+exAvaliacao: main.o vencedor.o pontuacao.o
+	gcc -g -Wall main.o vencedor.o pontuacao.o -o exAvaliacao
 	
 main.o: main.c
 	gcc -g -Wall -c main.c -o main.o
@@ -7,8 +7,8 @@ main.o: main.c
 vencedor.o: vencedor.c
 	gcc -g -Wall -c vencedor.c -o vencedor.o
 	
-header2.o: header2.s
-	gcc -g -Wall -c header2.s -o header2.o
+pontuacao.o: pontuacao.s
+	gcc -g -Wall -c pontuacao.s -o pontuacao.o
 	
 clean:
 	rm -f *.o exAvaliacao

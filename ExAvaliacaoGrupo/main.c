@@ -8,18 +8,18 @@ int main(void) {
 	
 	unsigned int* apontadorEquipaMaiorPontuacao = vencedor(pontos, n); //Ao chamarmos esta função vamos obter o endereço da equipa com a maior pontuação
 	
-	printf("A equipa que teve uma maior pontuação está guardada no endereço %p\n", apontadorEquipaMaiorPontuacao);
-	printf("\n");
+	printf("\nA equipa que teve uma maior pontuação está guardada no endereço:%p\n", apontadorEquipaMaiorPontuacao);
+	printf("\n\nEquipas:\n\n");
 	
 	char total_pontuacao_equipa = 0;
+	char equipas = 0;
 
 	for (char i = 0; i < n*4; i+=4) {
 		total_pontuacao_equipa = *(pontos + i + 1);
+
+		printf("Equipa %hhd, Pontuação total : %hhu\n",equipas, total_pontuacao_equipa);
 		
-		if(i==0 || i==3) printf("Equpipa %hhd , pontuaçao total : %hhd\n", (i/3 + 1), total_pontuacao_equipa);
-		else printf("Equpipa %hhd , pontuaçao total : %hhd\n", (i/3), total_pontuacao_equipa);
-		
-		
+		equipas++;
 		
 	}
 }

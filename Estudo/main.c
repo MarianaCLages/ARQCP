@@ -7,7 +7,7 @@ int main(void) {
 	
 	short count = calcula_notas(notas, n);
 	
-	printf("Durante o processo foram atualizadas %hd vezes as variáveis nota_min e nota_max\n",count);
+	printf("Número de atualizações das variáveis (nota_min e nota_max): %hd\n", count);
 	
 	return 0;
 }

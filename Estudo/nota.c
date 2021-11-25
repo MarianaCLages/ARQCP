@@ -24,7 +24,7 @@ short calcula_notas(unsigned int *notas, int n) {
 		
 		nota_final = (nota_ex1 * 0.2) + (nota_ex2 * 0.2) + (nota_ex3 * 0.2) + (nota_exame * 0.4);
 		
-		printf("Nota final:%d\n",nota_final);
+		printf("Nota final:%d\n", nota_final);
 		
 		if(min_max_notas()) {
 			count++;

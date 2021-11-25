@@ -1,13 +1,16 @@
 #include "pontuacao.h"
 
-unsigned char prova1, prova2, prova3;
+unsigned char prova1 = 0;
+unsigned char prova2 = 0;
+unsigned char prova3 = 0;
 
-int* vencedor(int *pontos, int n) {
+unsigned int* vencedor(unsigned int *pontos, int n) {
 	
-	char *ptr = (char *) pontos; // apontador para ir buscar os pontos de cada prova
-	char total_pontuacao = 0;
-	int* equipa_maior_pontuacao = pontos;
-	int* equipa_atual = pontos;
+	unsigned char* ptr = (unsigned char*) pontos; // apontador para ir buscar os pontos de cada prova
+	unsigned int* equipa_maior_pontuacao = pontos;
+	unsigned int* equipa_atual = pontos;
+	
+	unsigned char total_pontuacao = 0;
 	
 	for(char i = 0; i < n * 4; i += 4) { // variável i anda de 4 em 4 bytes para passar aos resultados da equipa seguinte
 		equipa_atual = pontos + i;

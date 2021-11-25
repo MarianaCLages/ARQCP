@@ -1,4 +1,4 @@
 #ifndef PONTUACAO_H
 #define PONTUACAO_H
-unsigned char pontucao(void);
+unsigned char pontuacao(void);
 #endif

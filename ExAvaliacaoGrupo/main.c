@@ -11,15 +11,14 @@ int main(void) {
 	printf("\nA equipa que teve uma maior pontuação está guardada no endereço:%p\n", apontadorEquipaMaiorPontuacao);
 	printf("\n\nEquipas:\n\n");
 	
-	char total_pontuacao_equipa = 0;
-	char equipas = 0;
+	char total_pontuacao_equipa = 0; // para armazenar as pontuações de cada equipa
+	char equipas = 0; //para incrementar o número da equipa no output
 
-	for (char i = 0; i < n*4; i+=4) {
-		total_pontuacao_equipa = *(pontos + i + 1);
+	for (char i = 0; i < n * 4; i += 4) {
+		total_pontuacao_equipa = *(pontos + i + 1); // vai buscar o valor da pontuação da equipa ao vetor
 
-		printf("Equipa %hhd, Pontuação total : %hhu\n",equipas, total_pontuacao_equipa);
+		printf("Equipa %hhd, Pontuação total : %hhu\n", equipas, total_pontuacao_equipa);
 		
 		equipas++;
-		
 	}
 }

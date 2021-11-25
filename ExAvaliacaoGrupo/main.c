@@ -11,11 +11,13 @@ int main(void) {
 	printf("\nA equipa que teve uma maior pontuação está guardada no endereço:%p\n", apontadorEquipaMaiorPontuacao);
 	printf("\n\nEquipas:\n\n");
 	
+	unsigned char* ptrChar = (unsigned char*) pontos;
+	
 	char total_pontuacao_equipa = 0;
 	char equipas = 0;
 
 	for (char i = 0; i < n*4; i+=4) {
-		total_pontuacao_equipa = *(pontos + i + 1);
+		total_pontuacao_equipa = *(ptrChar + i + 1);
 
 		printf("Equipa %hhd, Pontuação total : %hhu\n",equipas, total_pontuacao_equipa);
 		
